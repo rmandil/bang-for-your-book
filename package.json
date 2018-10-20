@@ -1,0 +1,25 @@
+{
+  "name": "bang-for-your-book",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ValerianClerc/bang-for-your-book.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ValerianClerc/bang-for-your-book/issues"
+  },
+  "homepage": "https://github.com/ValerianClerc/bang-for-your-book#readme",
+  "dependencies": {
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "ilp": "^14.1.0",
+    "ilp-protocol-spsp": "^2.2.0"
+  }
+}
