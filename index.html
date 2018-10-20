@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <script src="https://polyfill.webmonetization.org/polyfill.js"></script>
+    <script src="https://cdn.coil.com/donate.js"></script>
+    <script>
+      const donation = window.WebMonetizationScripts.donate({
+        paymentPointer: '$spsp.strata-ilsp.com'
+      })
+      donation.addEventListener('money', ev => {
+        const message = document.createElement('p')
+        message.innerHTML = 'Got micropayment for ' + ev.detail.amount + ' nanodollars'
+        document.body.appendChild(message)
+      })
+    </script>
+  </head>
+  <body>
+    <h1>Web Monetization Example</h1>
+  </body>
+</html>
