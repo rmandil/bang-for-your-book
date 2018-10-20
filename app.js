@@ -12,6 +12,9 @@ const app = express();
 //app.use(require('payment.js'));
 app.set('view engine', 'ejs');
 
+app.get('/:id', function (req, res) {
+    res.render('textbook');
+})
 
 app.get('/', function (req, res) {
     payment.run();
